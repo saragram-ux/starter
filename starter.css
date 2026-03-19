@@ -11,6 +11,12 @@
   --color-border: #dddddd;
   --color-surface: #f7f7f7;
 
+  --color-accent-purple: #cdbdff;
+  --color-accent-purple-strong: #8f6fff;
+
+  --color-accent-mint: #c7f3e8;
+  --color-accent-mint-strong: #5fd3b8;
+
   --font-body: "Inter", system-ui, sans-serif;
   --font-heading: "Inter", system-ui, sans-serif;
 
@@ -278,6 +284,10 @@ ol {
   color: var(--color-text);
 }
 
+.button-secondary:hover {
+  background-color: var(--color-accent-mint);
+}
+
 .button-group {
   display: flex;
   flex-wrap: wrap;
@@ -422,6 +432,18 @@ ol {
   background-color: #d6d6d6;
 }
 
+.window-top span:nth-child(1) {
+  background-color: var(--color-accent-purple);
+}
+
+.window-top span:nth-child(2) {
+  background-color: var(--color-accent-mint);
+}
+
+.window-top span:nth-child(3) {
+  background-color: #d6d6d6;
+}
+
 .window-body {
   padding: 1.25rem;
 }
@@ -434,9 +456,26 @@ code {
 .window pre,
 .code-block {
   font-size: 0.9rem;
-  line-height: 1.6;
+  line-height: 1.45;
   white-space: pre-wrap;
   overflow-x: auto;
+}
+
+.code-tag {
+  color: var(--color-muted);
+}
+
+.code-attr {
+  color: var(--color-accent-purple-strong);
+  font-weight: 500;
+}
+
+.code-value {
+  color: var(--color-accent-mint-strong);
+}
+
+.code-text {
+  color: var(--color-text);
 }
 
 .section-heading {

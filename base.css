@@ -6,10 +6,16 @@
 
 :root {
   --color-text: #111111;
-  --color-bg: #ffffff;
+  --color-bg: #fafafa;
   --color-muted: #6b6b6b;
   --color-border: #dddddd;
   --color-surface: #f7f7f7;
+
+  --color-accent-purple: #cdbdff;
+  --color-accent-purple-strong: #8f6fff;
+
+  --color-accent-mint: #c7f3e8;
+  --color-accent-mint-strong: #5fd3b8;
 
   --font-body: "Inter", system-ui, sans-serif;
   --font-heading: "Inter", system-ui, sans-serif;
@@ -62,7 +68,8 @@ body {
   color: var(--color-text);
   font-family: var(--font-body);
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
 }
 
 img {
