@@ -1,6 +1,6 @@
 # Starter
 
-A simple starting point for building websites.
+A simple CSS starting point for building websites.
 
 Clean defaults.
 Simple structure.
