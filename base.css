@@ -198,12 +198,20 @@ ol {
   padding-inline: 1rem;
 }
 
+.section {
+  padding-block: 5.5rem;
+}
+
 .section-hero {
   padding-block: 5rem 4rem;
 }
 
 .section-large {
   padding-block: 5.5rem;
+}
+
+.section-border {
+  border-top: 1px solid var(--color-border);
 }
 
 .container-small {
@@ -227,6 +235,10 @@ ol {
 .max-width-medium {
   width: 100%;
   max-width: 32rem;
+}
+
+.center {
+  margin-inline: auto;
 }
 
 /* =========================
@@ -304,6 +316,10 @@ ol {
   flex-wrap: wrap;
   gap: 0.875rem;
   align-items: center;
+}
+
+.button-group-center {
+  justify-content: center;
 }
 
 .card {
@@ -408,6 +424,10 @@ ol {
 @media (min-width: 768px) {
   .page-padding {
     padding-inline: 2rem;
+  }
+
+  .section {
+    padding-block: 5.5rem;
   }
 
   .section-hero {
