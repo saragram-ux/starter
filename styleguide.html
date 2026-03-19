@@ -39,9 +39,19 @@
         </div>
       </section>
 
-      <section class="guide-section page-padding section-large">
+      <section class="page-padding section-large guide-section">
         <div class="container-large">
           <div class="guide-list">
+            <div class="guide-item">
+              <h2 class="guide-title">Principles</h2>
+
+              <div class="guide-card stack-sm max-width-medium">
+                <p>Simple by default. No overbuilt systems.</p>
+                <p>Use it as-is. Shape it when needed.</p>
+                <p>Clear naming. Built for real work.</p>
+              </div>
+            </div>
+
             <div class="guide-item">
               <h2 class="guide-title">Typography</h2>
 
@@ -118,9 +128,29 @@
                   <div class="color-swatch-card">
                     <div
                       class="color-swatch"
+                      style="
+                        background-color: var(--color-accent-purple-strong);
+                      "
+                    ></div>
+                    <span class="guide-label"
+                      >--color-accent-purple-strong</span
+                    >
+                  </div>
+
+                  <div class="color-swatch-card">
+                    <div
+                      class="color-swatch"
                       style="background-color: var(--color-accent-mint)"
                     ></div>
                     <span class="guide-label">--color-accent-mint</span>
+                  </div>
+
+                  <div class="color-swatch-card">
+                    <div
+                      class="color-swatch"
+                      style="background-color: var(--color-accent-mint-strong)"
+                    ></div>
+                    <span class="guide-label">--color-accent-mint-strong</span>
                   </div>
                 </div>
               </div>
@@ -160,7 +190,7 @@
                 <div class="button-group">
                   <a href="#" class="button">
                     Primary
-                    <i class="ph ph-arrow-right icon-sm"></i>
+                    <i class="ph ph-arrow-right icon-sm icon"></i>
                   </a>
                   <a href="#" class="button button-secondary">Secondary</a>
                   <a href="#" class="button button-small">Small</a>
@@ -216,6 +246,18 @@
                     <span class="shadow-label">shadow-lg</span>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div class="guide-item">
+              <h2 class="guide-title">Code</h2>
+
+              <div class="guide-card">
+                <pre
+                  class="code-block"
+                ><code><span class="code-tag">&lt;section</span> <span class="code-attr">class</span>=<span class="code-value">"page-padding section-large"</span><span class="code-tag">&gt;</span>
+  <span class="code-tag">&lt;h1&gt;</span>Hello<span class="code-tag">&lt;/h1&gt;</span>
+<span class="code-tag">&lt;/section&gt;</span></code></pre>
               </div>
             </div>
 
