@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starter</title>
+    <title>Starter — A simple starting point</title>
+    <meta
+      name="description"
+      content="Starter is a simple starting point for building websites."
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,153 +19,203 @@
     <link rel="stylesheet" href="starter.css" />
   </head>
   <body>
+    <header class="site-header page-padding">
+      <div class="container-large header-row">
+        <a href="#" class="brand">Starter</a>
+
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#includes">Includes</a>
+          <a href="#example">Example</a>
+        </nav>
+      </div>
+    </header>
+
     <main>
-      <section class="page-padding section-hero">
+      <section class="hero page-padding">
         <div class="container-large">
-          <div class="guide-header max-width-large">
-            <span class="eyebrow">Starter</span>
-            <h1 class="heading-h1">A simple starting point.</h1>
-            <p class="text-medium text-muted">
-              Clean defaults, simple structure, nothing extra.
-            </p>
+          <div class="hero-layout">
+            <div class="hero-copy">
+              <p class="eyebrow">A simple starting point</p>
+              <h1 class="heading-h1">
+                Starter helps you begin without the mess.
+              </h1>
+              <p class="text-medium text-muted max-width-medium">
+                Clean defaults, simple structure, and just enough system to get
+                moving.
+              </p>
+
+              <div class="button-group">
+                <a href="#example" class="button">See the example</a>
+
+                <a href="styleguide.html" class="button button-secondary">
+                  Style guide
+                </a>
+
+                <a
+                  href="https://github.com/saragram-ux/starter"
+                  class="button button-secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-card">
+              <div class="window">
+                <div class="window-top">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="window-body">
+                  <pre><code>&lt;section class="page-padding section-large"&gt;
+  &lt;div class="container-medium"&gt;
+    &lt;h1 class="heading-h1"&gt;Hello&lt;/h1&gt;
+    &lt;p class="text-medium text-muted"&gt;
+      A clean starting point.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="guide-section page-padding section-large">
+      <section id="about" class="section page-padding">
         <div class="container-large">
-          <div class="guide-list">
-            <div class="guide-item">
-              <h2 class="guide-title">Typography</h2>
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2 class="heading-h2">Not a framework. Not too empty either.</h2>
+          </div>
 
-              <div class="guide-card stack-md">
-                <h1 class="heading-h1">Heading H1</h1>
-                <h2 class="heading-h2">Heading H2</h2>
-                <h3 class="heading-h3">Heading H3</h3>
+          <div class="grid-3">
+            <article class="card stack-xs">
+              <h3 class="heading-h5">Simple by default</h3>
+              <p class="text-muted">
+                Starter gives you a clean base without filling your project with
+                noise.
+              </p>
+            </article>
 
-                <div class="stack-sm">
-                  <p class="text-base">This is base text for most content.</p>
-                  <p class="text-medium">
-                    Slightly larger text for intros or emphasis.
-                  </p>
-                  <p class="text-small text-muted">
-                    Small muted text for captions or meta.
-                  </p>
-                </div>
-              </div>
+            <article class="card stack-xs">
+              <h3 class="heading-h5">Easy to shape</h3>
+              <p class="text-muted">
+                Use it as-is, trim it down, or build on top of it over time.
+              </p>
+            </article>
+
+            <article class="card stack-xs">
+              <h3 class="heading-h5">Made for real work</h3>
+              <p class="text-muted">
+                Good naming, clear structure, and a setup you can actually
+                reuse.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="includes" class="section page-padding section-border">
+        <div class="container-large">
+          <div class="section-heading">
+            <p class="eyebrow">What’s included</p>
+            <h2 class="heading-h2">The basics, done properly.</h2>
+          </div>
+
+          <div class="includes-grid">
+            <div class="card stack-sm">
+              <h3 class="heading-h5">Layout</h3>
+              <ul class="list-clean">
+                <li>page-padding</li>
+                <li>container-small / medium / large</li>
+                <li>section spacing</li>
+                <li>simple grid helpers</li>
+              </ul>
             </div>
 
-            <div class="guide-item">
-              <h2 class="guide-title">Layout</h2>
-
-              <div class="guide-row is-3-col">
-                <div class="guide-card stack-sm">
-                  <span class="guide-label">container-small</span>
-                  <div class="card">
-                    <p>Small</p>
-                  </div>
-                </div>
-
-                <div class="guide-card stack-sm">
-                  <span class="guide-label">container-medium</span>
-                  <div class="card">
-                    <p>Medium</p>
-                  </div>
-                </div>
-
-                <div class="guide-card stack-sm">
-                  <span class="guide-label">container-large</span>
-                  <div class="card">
-                    <p>Large</p>
-                  </div>
-                </div>
-              </div>
+            <div class="card stack-sm">
+              <h3 class="heading-h5">Typography</h3>
+              <ul class="list-clean">
+                <li>heading-h1 to heading-h5</li>
+                <li>text-small / base / medium</li>
+                <li>text-muted</li>
+                <li>clean defaults with Inter</li>
+              </ul>
             </div>
 
-            <div class="guide-item">
-              <h2 class="guide-title">Buttons</h2>
+            <div class="card stack-sm">
+              <h3 class="heading-h5">Components</h3>
+              <ul class="list-clean">
+                <li>buttons</li>
+                <li>cards</li>
+                <li>form fields</li>
+                <li>basic utility classes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div class="guide-card">
-                <div class="button-group">
-                  <a href="#" class="button">Primary</a>
-                  <a href="#" class="button button-secondary">Secondary</a>
-                  <a href="#" class="button button-small">Small</a>
-                </div>
-              </div>
+      <section id="example" class="section page-padding">
+        <div class="container-large">
+          <div class="section-heading">
+            <p class="eyebrow">Example</p>
+            <h2 class="heading-h2">A small preview of the system.</h2>
+          </div>
+
+          <div class="example-layout">
+            <div class="card stack-sm">
+              <p class="eyebrow">HTML</p>
+              <pre
+                class="code-block"
+              ><code>&lt;section class="page-padding section-large"&gt;
+  &lt;div class="container-medium"&gt;
+    &lt;h1 class="heading-h1"&gt;Hello&lt;/h1&gt;
+    &lt;p class="text-medium text-muted"&gt;
+      A clean starting point.
+    &lt;/p&gt;
+    &lt;a href="#" class="button"&gt;Get started&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
             </div>
 
-            <div class="guide-item">
-              <h2 class="guide-title">Cards</h2>
-
-              <div class="grid-3">
-                <article class="card stack-xs">
-                  <h3 class="heading-h5">Card</h3>
-                  <p class="text-muted">Simple and reusable.</p>
-                </article>
-
-                <article class="card stack-xs">
-                  <h3 class="heading-h5">Card</h3>
-                  <p class="text-muted">Use everywhere.</p>
-                </article>
-
-                <article class="card stack-xs">
-                  <h3 class="heading-h5">Card</h3>
-                  <p class="text-muted">Keep it clean.</p>
-                </article>
+            <div class="card preview-card">
+              <div class="preview-box">
+                <p class="eyebrow">Preview</p>
+                <h3 class="heading-h3">Hello</h3>
+                <p class="text-medium text-muted">A clean starting point.</p>
+                <a href="#" class="button">Get started</a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="guide-item">
-              <h2 class="guide-title">Form</h2>
+      <section class="section page-padding section-border">
+        <div class="container-medium">
+          <div class="cta-card">
+            <p class="eyebrow">Starter</p>
+            <h2 class="heading-h2">
+              Take what you need. Change what you don’t.
+            </h2>
+            <p class="text-medium text-muted max-width-medium center">
+              Starter is meant to be used, not followed.
+            </p>
 
-              <div class="guide-card max-width-medium">
-                <form class="form">
-                  <div class="field">
-                    <label class="label" for="name">Name</label>
-                    <input
-                      class="input"
-                      id="name"
-                      type="text"
-                      placeholder="Your name"
-                    />
-                  </div>
-
-                  <div class="field">
-                    <label class="label" for="email">Email</label>
-                    <input
-                      class="input"
-                      id="email"
-                      type="email"
-                      placeholder="you@example.com"
-                    />
-                  </div>
-
-                  <div class="field">
-                    <label class="label" for="message">Message</label>
-                    <textarea
-                      class="input input-textarea"
-                      id="message"
-                      placeholder="Write something..."
-                    ></textarea>
-                  </div>
-
-                  <button class="button button-block" type="submit">
-                    Send
-                  </button>
-                </form>
-              </div>
-            </div>
-
-            <div class="guide-item">
-              <h2 class="guide-title">Text</h2>
-
-              <div class="guide-card max-width-medium stack-md">
-                <p>Good defaults make building faster and easier.</p>
-
-                <blockquote class="quote">
-                  If it feels complicated, it probably is.
-                </blockquote>
-              </div>
+            <div class="button-group button-group-center">
+              <a
+                href="https://github.com/saragram-ux/starter"
+                class="button"
+                target="_blank"
+                rel="noreferrer"
+                >Open the repo</a
+              >
             </div>
           </div>
         </div>
