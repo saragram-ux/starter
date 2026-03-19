@@ -270,7 +270,7 @@ ol {
 }
 
 .stack-sm > * + * {
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
 }
 
 .stack-md > * + * {
