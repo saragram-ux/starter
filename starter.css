@@ -6,7 +6,7 @@
 
 :root {
   --color-text: #111111;
-  --color-bg: #ffffff;
+  --color-bg: #fafafa;
   --color-muted: #6b6b6b;
   --color-border: #dddddd;
   --color-surface: #f7f7f7;
@@ -204,7 +204,7 @@ ol {
 
 .max-width-medium {
   width: 100%;
-  max-width: 40rem;
+  max-width: 32rem;
 }
 
 .center {
@@ -334,7 +334,7 @@ ol {
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(17, 17, 17, 0.06);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.04);
 }
 
 .header-row {
