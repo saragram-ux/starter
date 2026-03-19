@@ -193,6 +193,7 @@
   border-radius: var(--radius-lg);
   padding: 2.25rem 1.5rem;
   background-color: #ffffff;
+  box-shadow: var(--shadow-sm);
 }
 
 .site-footer {

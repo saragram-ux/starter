@@ -38,9 +38,9 @@
   --space-3xl: 4rem;
 
   --shadow-xs: 0 1px 2px rgba(17, 17, 17, 0.04);
-  --shadow-sm: 0 2px 6px rgba(17, 17, 17, 0.06);
-  --shadow-md: 0 8px 20px rgba(17, 17, 17, 0.08);
-  --shadow-lg: 0 16px 40px rgba(17, 17, 17, 0.12);
+  --shadow-sm: 0 4px 12px rgba(17, 17, 17, 0.06);
+  --shadow-md: 0 12px 24px rgba(17, 17, 17, 0.08);
+  --shadow-lg: 0 20px 40px rgba(17, 17, 17, 0.1);
 }
 
 /* =========================
@@ -327,6 +327,10 @@ ol {
   justify-content: center;
 }
 
+.button .icon {
+  margin-left: 0.5rem;
+}
+
 .icon {
   display: inline-flex;
   align-items: center;
@@ -346,22 +350,6 @@ ol {
   font-size: 1.5rem;
 }
 
-.card {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: 1.25rem;
-  background-color: #ffffff;
-  box-shadow: var(--shadow-xs);
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.card:hover {
-  border-color: #bbbbbb;
-  box-shadow: var(--shadow-sm);
-}
-
 .shadow-xs {
   box-shadow: var(--shadow-xs);
 }
@@ -376,6 +364,64 @@ ol {
 
 .shadow-lg {
   box-shadow: var(--shadow-lg);
+}
+
+.icons-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.icon-card {
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: #ffffff;
+}
+
+.shadow-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.shadow-sample {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: #ffffff;
+  padding: 1.25rem;
+  min-height: 6rem;
+  display: grid;
+  align-content: end;
+}
+
+.shadow-label {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+
+@media (min-width: 768px) {
+  .shadow-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  background-color: #ffffff;
+  box-shadow: var(--shadow-xs);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  border-color: #bbbbbb;
+  box-shadow: var(--shadow-sm);
 }
 
 .form {
