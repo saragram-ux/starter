@@ -242,6 +242,11 @@ ol {
   max-width: 32rem;
 }
 
+.max-width-large {
+  width: 100%;
+  max-width: 48rem;
+}
+
 .center {
   margin-inline: auto;
 }
@@ -505,6 +510,10 @@ ol {
   font-size: 0.75rem;
   line-height: 1.2;
   color: var(--color-muted);
+}
+
+.guide-back {
+  padding-top: 1rem;
 }
 
 /* =========================
